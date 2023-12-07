@@ -1,0 +1,68 @@
+{
+  "languajes": [
+    {
+      "name": "Ensamblador",
+      "usos": [
+        "Desarrollo de Controladores de Dispositivos: Para interactuar directamente con hardware específico, como tarjetas gráficas o controladores de red.",
+        "Programación de Microprogramas: En la programación de microprogramas (microcode), que es la secuencia de instrucciones en la arquitectura de un procesador."
+      ],
+      "holaMundo": [
+        ".MODEL SMALL",
+        ".STACK",
+        ".DATA",
+        "CADENA1 DB 'HOLAMUNDO $'",
+        "CADENA2 DB 'HOLAMUNDO2 $'",
+        ".CODE",
+        "PROGRAMA:",
+        " MOV AX,@DATA",
+        " MOV DS,AX",
+        " MOV DX,OFFSET CADENA1",
+        " MOV AH,9",
+        " INT 21H",
+        " MOV DX,OFFSET CADENA2",
+        " MOV AH,9",
+        " INT 21H END PROGRAMA"
+      ],
+      "proyecto": "assets/ms-dos.png"
+    },
+    {
+      "name": "C",
+      "usos": ["uno,dos"],
+      "holaMundo": "",
+      "proyecto": ""
+    },
+    {
+      "name": "C++",
+      "usos": [
+        "Desarrollo de Videojuegos con Unreal Engine o Unity: es ampliamente utilizado en la industria del desarrollo de videojuegos potentes y visualesmente impresionantes.",
+        "Desarrollo de Sistemas Operativos (Linux): C++ se utiliza en el desarrollo de sistemas operativos, y el núcleo del sistema operativo Linux está escrito en C y C++"
+      ],
+      "holaMundo": "",
+      "proyecto": ""
+    },
+    {
+      "name": "Java",
+      "usos": [
+        "Desarrollo de Aplicaciones Móviles: es el lenguaje principal para el desarrollo de aplicaciones móviles Android.",
+        "Desarrollo de Juegos : Java también se utiliza en el desarrollo de juegos multiplataforma."
+      ],
+      "holaMundo": "",
+      "proyecto": ""
+    },
+    {
+      "name": "JavaScript",
+      "usos": ["uno,dos"],
+      "holaMundo": "",
+      "proyecto": ""
+    },
+    {
+      "name": "Python",
+      "usos": [
+        "Análisis de Datos: para el análisis de datos y la ciencia de datos, manipular y analizar datos.",
+        "Automatización de Tareas : Python es utilizado para la automatización de tareas, ya sea en pruebas de software o para la automatización de tareas de usuario ."
+      ],
+      "holaMundo": "",
+      "proyecto": ""
+    }
+  ]
+}
