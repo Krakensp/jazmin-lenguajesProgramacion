@@ -23,13 +23,21 @@
         " MOV AH,9",
         " INT 21H END PROGRAMA"
       ],
-      "proyecto": "assets/ms-dos.png"
+      "proyecto": "assets/ms-dos.webp"
     },
     {
       "name": "C",
-      "usos": ["uno,dos"],
-      "holaMundo": "",
-      "proyecto": ""
+      "usos": [
+        "Desarrollo de Aplicaciones de Bajo Nivel: C es adecuado para el desarrollo de aplicaciones que requieren un control preciso sobre los recursos del sistema, como controladores de dispositivos y software de sistemas.",
+        "Desarrollo de Sistemas Operativos (Linux): C es ampliamente utilizado en el desarrollo de sistemas operativos. El núcleo del sistema operativo Linux,está escrito en C."
+      ],
+      "holaMundo": [
+        "#include <stdio.h>",
+        "int main() {",
+        "printf(\"Hola Mundo\n\");",
+        "return 0;"
+      ],
+      "proyecto": "assets/linux.webp"
     },
     {
       "name": "C++",
@@ -37,8 +45,13 @@
         "Desarrollo de Videojuegos con Unreal Engine o Unity: es ampliamente utilizado en la industria del desarrollo de videojuegos potentes y visualesmente impresionantes.",
         "Desarrollo de Sistemas Operativos (Linux): C++ se utiliza en el desarrollo de sistemas operativos, y el núcleo del sistema operativo Linux está escrito en C y C++"
       ],
-      "holaMundo": "",
-      "proyecto": ""
+      "holaMundo": [
+        "#include <iostream.h>",
+        "int main() {",
+        "std::cout << \"Hola Mundo\" << std::endl;",
+        "return 0;"
+      ],
+      "proyecto": "assets/pokemon.webp"
     },
     {
       "name": "Java",
@@ -46,13 +59,23 @@
         "Desarrollo de Aplicaciones Móviles: es el lenguaje principal para el desarrollo de aplicaciones móviles Android.",
         "Desarrollo de Juegos : Java también se utiliza en el desarrollo de juegos multiplataforma."
       ],
-      "holaMundo": "",
-      "proyecto": ""
+      "holaMundo": [
+        "public class HolaMundo {",
+        "public static void main(String[] args) {",
+        "System.out.println(\"Hola Mundo\");",
+        "}"
+      ],
+      "proyecto": "assets/minecraft.webp"
     },
     {
       "name": "JavaScript",
       "usos": ["uno,dos"],
-      "holaMundo": "",
+      "holaMundo": [
+        "public class HolaMundo {",
+        "public static void main(String[] args) {",
+        "System.out.println(\"Hola Mundo\");",
+        "}"
+      ],
       "proyecto": ""
     },
     {
@@ -61,7 +84,12 @@
         "Análisis de Datos: para el análisis de datos y la ciencia de datos, manipular y analizar datos.",
         "Automatización de Tareas : Python es utilizado para la automatización de tareas, ya sea en pruebas de software o para la automatización de tareas de usuario ."
       ],
-      "holaMundo": "",
+      "holaMundo": [
+        "public class HolaMundo {",
+        "public static void main(String[] args) {",
+        "System.out.println(\"Hola Mundo\");",
+        "}"
+      ],
       "proyecto": ""
     }
   ]

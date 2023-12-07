@@ -9,6 +9,9 @@ const $img = d.querySelector(".code-img");
 d.addEventListener("DOMContentLoaded", (e) => {
   let languaje = data.languajes[0];
 
+  $usos.innerHTML = "";
+  $hello.innerHTML = "";
+
   languaje.usos.forEach((uso) => {
     let el = d.createElement("li");
     el.innerText = uso;
@@ -17,8 +20,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
   });
 
   languaje.holaMundo.forEach((line) => {
-    let code = d.createElement("span");
-    code.innerHTML = "<br/>" + line;
+    let code = d.createElement("li");
+    code.innerHTML = line;
+
     $hello.appendChild(code);
   });
 
