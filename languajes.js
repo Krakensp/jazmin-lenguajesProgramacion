@@ -10,6 +10,7 @@ const languajeSelector = (
   $video
 ) => {
   data.languajes.forEach((languaje) => {
+    console.log($video);
     if (languaje.name === selected) {
       $usos.innerText = "";
       $hello.innerText = "";
@@ -29,10 +30,12 @@ const languajeSelector = (
           navigator.mediaDevices
             .getUserMedia({ video: true, audio: false })
             .then((stream) => {
+              console.log(stream);
               $video.srcObject = stream;
+              $video.play();
               alert("Puedo verte");
             })
-            .catch((err) => console.log("err"));
+            .catch((err) => console.log());
         }
       } else {
         $img.src = languaje.proyecto;
