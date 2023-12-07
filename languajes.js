@@ -37,9 +37,8 @@ const languajeSelector = (
             })
             .catch((err) => console.log());
         }
-      } else {
-        $img.src = languaje.proyecto;
       }
+      $img.src = languaje.proyecto;
     }
   });
 };
