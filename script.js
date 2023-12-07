@@ -30,6 +30,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
 });
 
 d.addEventListener("click", (e) => {
+  e.preventDefault;
   if (e.target.matches("button")) {
     const $buttons = d.querySelectorAll("button");
     $buttons.forEach((button) => {

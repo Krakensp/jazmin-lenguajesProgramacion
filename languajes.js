@@ -17,14 +17,13 @@ const languajeSelector = (
         let el = d.createElement("li");
         el.innerText = uso;
         $usos.appendChild(el);
-
-        languaje.holaMundo.forEach((line) => {
-          let code = d.createElement("li");
-          code.innerText = line;
-          $hello.appendChild(code);
-        });
-        $img.src = languaje.proyecto;
       });
+      languaje.holaMundo.forEach((line) => {
+        let code = d.createElement("li");
+        code.innerText = line;
+        $hello.appendChild(code);
+      });
+      $img.src = languaje.proyecto;
     }
   });
   // languaje.holaMundo.forEach((line) => {

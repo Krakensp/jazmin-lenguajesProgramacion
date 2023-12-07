@@ -84,13 +84,8 @@
         "Análisis de Datos: para el análisis de datos y la ciencia de datos, manipular y analizar datos.",
         "Automatización de Tareas : Python es utilizado para la automatización de tareas, ya sea en pruebas de software o para la automatización de tareas de usuario ."
       ],
-      "holaMundo": [
-        "public class HolaMundo {",
-        "public static void main(String[] args) {",
-        "System.out.println(\"Hola Mundo\");",
-        "}"
-      ],
-      "proyecto": ""
+      "holaMundo": ["print(\"Hola Mundo\")"],
+      "proyecto": "assets/chatgpt.webp"
     }
   ]
 }
