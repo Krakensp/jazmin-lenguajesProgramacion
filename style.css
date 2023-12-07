@@ -148,6 +148,11 @@ nav button:hover {
   align-items: center;
   justify-content: center;
 }
+
+#video {
+  width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 800px) {
   /* .container {
     height: auto;
