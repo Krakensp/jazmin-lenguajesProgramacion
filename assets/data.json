@@ -69,14 +69,12 @@
     },
     {
       "name": "JavaScript",
-      "usos": ["uno,dos"],
-      "holaMundo": [
-        "public class HolaMundo {",
-        "public static void main(String[] args) {",
-        "System.out.println(\"Hola Mundo\");",
-        "}"
+      "usos": [
+        "Desarrollo Web Frontend:permite la creación de interactividad y dinamismo en páginas web, responder a eventos del usuario y comunicarse con servicios web.",
+        "Desarrollo de Aplicaciones Web: se utilizan para construir aplicaciones web modernas de una sola página y proporcionar una experiencia de usuario más fluida."
       ],
-      "proyecto": ""
+      "holaMundo": ["console.log(\"Hola Mundo\");"],
+      "proyecto": "assets/web.webp"
     },
     {
       "name": "Python",
