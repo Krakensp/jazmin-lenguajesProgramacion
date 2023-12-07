@@ -5,7 +5,7 @@ const d = document;
 const $usos = d.querySelector(".usos");
 const $hello = d.querySelector(".hello-world");
 const $img = d.querySelector(".code-img");
-
+const $video = d.getElementById("video");
 d.addEventListener("DOMContentLoaded", (e) => {
   let languaje = data.languajes[0];
 
@@ -41,6 +41,6 @@ d.addEventListener("click", (e) => {
       }
     });
 
-    languajeSelector(data, $img, e.target.name, $usos, $hello, $img);
+    languajeSelector(data, $img, e.target.name, $usos, $hello, $img, $video);
   }
 });

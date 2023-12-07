@@ -6,7 +6,8 @@ const languajeSelector = (
   selected,
   $usos,
   $hello,
-  $img
+  $img,
+  $video
 ) => {
   data.languajes.forEach((languaje) => {
     if (languaje.name === selected) {
@@ -23,15 +24,21 @@ const languajeSelector = (
         code.innerText = line;
         $hello.appendChild(code);
       });
-      $img.src = languaje.proyecto;
+      if (selected === "JavaScript") {
+        if (navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices
+            .getUserMedia({ video: true, audio: false })
+            .then((stream) => {
+              $video.srcObject = stream;
+              alert("Puedo verte");
+            })
+            .catch((err) => console.log("err"));
+        }
+      } else {
+        $img.src = languaje.proyecto;
+      }
     }
   });
-  // languaje.holaMundo.forEach((line) => {
-  //   let code = d.createElement("span");
-  //   code.innerHTML = "<br/>" + line;
-  //   $hello.appendChild(code);
-  // });
-  // $img.src = languaje.proyecto;
 };
 
 export default languajeSelector;
